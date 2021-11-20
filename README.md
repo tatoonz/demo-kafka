@@ -52,3 +52,18 @@ kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic demo --from-
 ```sh
 docker compose restart kafka_exporter
 ```
+
+## Grafana
+
+open [http://localhost:3000](http://localhost:3000) on your browser
+
+login with
+user: admin
+pass: admin
+
+### Add datasource
+
+1. Click cog icon on the left sidebar
+2. Select Prometheus
+3. For URL input type `http://prometheus:9090`
+4. Click Save & test button
