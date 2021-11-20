@@ -44,3 +44,11 @@ docker compose exec kafka bash
 
 kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic demo --from-beginning
 ```
+
+## Exporter
+
+### Restart
+
+```sh
+docker compose restart kafka_exporter
+```
