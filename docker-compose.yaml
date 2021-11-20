@@ -18,3 +18,11 @@ services:
       - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092
       - KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181
       - ALLOW_PLAINTEXT_LISTENER=yes
+
+  kafka_exporter:
+    image: danielqsj/kafka-exporter:v1.4.2
+    command: 
+      - --kafka.version=3.0.0
+    ports:
+      - "9308:9308"
+    
